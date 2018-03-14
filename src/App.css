@@ -1,0 +1,103 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+ box-sizing: border-box; 
+ 
+}
+
+.App-header{
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+.searchText{
+  padding: 6px;
+  width: 60%;
+  min-height: 30px;
+  border: none;
+  font-size: 17px;
+  margin: 2%;
+  border-radius: 5px 10px;
+  -webkit-border-radius: 5px 10px;  /* Safari  */
+  -moz-border-radius: 5px 10px;     /* Firefox */
+}
+
+.dataContent{
+  width: 100%;
+  background: whitesmoke;
+  height: 700px;
+}
+
+.currentVideo{
+width: 70%;
+height: 100%;
+float: left;
+}
+
+.videoList{
+  width: 28%;
+  height: 100%;
+  float: left;
+  margin-left: 1%;
+  overflow: auto
+}
+
+.videoListHeader {
+  width: 100%;
+  height: 20%;
+  margin: 30px;
+  font-weight: bold; 
+  font-size: 2em;
+}
+
+.videoListContent {
+  width: 100%;
+  height: 130px;
+  
+}
+
+.noVideoImg{
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+.currentVideoFrame{
+  width: 90%;
+  height: 70%;
+  margin-right: 5%;
+}
+
+.currentVideoInfo{
+  width: 90%;
+  height: 30%;
+  margin: 30px;
+  font-size: 2em;
+}
+
+.currentVideoInfoTitle{
+  font-weight: bold;  
+}
+.currentVideoInfoDescription{
+  font-size: 12px;
+  width: 80%;
+}
+
+.videListItemImg{
+  width: 45%;
+  float: left;
+}
+.videListItemInfo{
+  width: 45%;
+  float: left;
+}
+
+.videoListItemTitle{
+  font-weight: bold;
+}
+
+.videoListItemChannel{
+  color: gray;
+}
