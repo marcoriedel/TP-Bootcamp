@@ -1,16 +1,18 @@
 import React from 'react';
-import {debounce} from 'throttle-debounce';
+import {debounce} from 'lodash';
 
 class SearchText extends React.Component{
-        
-    handleChange(event) {
-        this.props.apiCall(event.target.value);
-      }  
+    
+    
+    handleChange = debounce((text) => {
+        this.props.apiCall(text);
+      } ,500);
+
 
     render(){
         return(
             <header className="App-header">
-            <input onChange={this.handleChange.bind(this)} className="searchText" type="text" placeholder="Search.." alt="Powered By YouTube"/>          
+            <input onChange={ e => this.handleChange(e.target.value)} className="searchText" type="text" placeholder="Search.." alt="Powered By YouTube"/>          
         </header> 
         )
     } 
